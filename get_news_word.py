@@ -34,7 +34,7 @@ c.close()
 print(current_url)
 
 
-# news取得ß
+# news取得
 c = urllib.request.urlopen(current_url)
 soup = bs4.BeautifulSoup(c.read(), "html5lib")
 links = soup('a')
